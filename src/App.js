@@ -252,7 +252,7 @@ function App() {
                 className={`chat-el ${msg.sender && msg.sender._id === user.data._id ? 'own-message' : 'other-message'}`}
               >
                 <div className="sender-name">
-                  {msg.sender ? msg.sender.fullName : 'Noma\'lum foydalanuvchi'}
+                  {msg.userName}
                 </div>
                 <div className="message-content">
                   <div className="message-text">{msg.text}</div>
